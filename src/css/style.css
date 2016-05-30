@@ -173,15 +173,27 @@ label {
     height: 28px;
     width: 28px
 }
+
 .contact-link path {
     fill: #65a3dc
 }
+
 .contact-link a {
     vertical-align: middle
 }
+
 .contact-link a:hover path {
     fill: #3B8AD3
 }
+
 .item {
     height: 200px
+}
+
+.portfolio-image {
+   max-width: 49%;
+   float: left;
+   padding-top: 1%;
+   padding-left: 0.5%;
+   padding-right: 0.5%; 
 }
