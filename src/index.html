@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width">
     <meta name="theme-color" content="#3bbbd3">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/css/lightgallery.min.css" /> 
+
 </head>
 <body>
 
@@ -161,12 +163,19 @@
                     <div class="block-box">
                         <h4 class="h4 small-title">SolidWorks</h4>
 
-                            <img class="portfolio-image" src="images/drilling_equipment_1.gif" alt="Drilling equipment"/>
+                        <div id="lightgallery">
+                            
+                            <a href="images/drilling_equipment_1.gif">
+                                <img class="portfolio-image" src="images/drilling_equipment_1.gif" alt="Drilling equipment"/>
+                            </a>
+
                             <img class="portfolio-image" src="images/drilling_equipment_2.gif" alt="Drilling equipment"/>
                             <img class="portfolio-image" src="images/hook_assembly.gif" alt="Assembly Hook"/>
                             <img class="portfolio-image" src="images/pulley_shaft_assembly.gif" alt="Pulley Shaft"/>
                             <img class="portfolio-image" src="images/bracket_assembly.gif" alt="Assembly bracket"/>
-
+                            <img class="portfolio-image" src="images/pulley_shaft_top.jpg" alt="Top_drawing"/>
+                            
+                        </div>
 
                     </div>
                 </div>
@@ -215,11 +224,19 @@
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+ <!-- jQuery version must be >= 1.8.0; -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lightgallery.min.js"></script>
+
+<!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+<!-- lightgallery plugins -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-thumbnail.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.2.19/js/lg-fullscreen.min.js"></script>
+
 <script>
-    (function () {
-        var startDate = moment('13-03-2014', 'DD-MM-YYYY');
-        document.querySelector('#duration').innerText = moment().from(startDate, true)
-    })()
+    $("#lightgallery").lightGallery()
 </script>
 
 <script>
@@ -232,5 +249,6 @@
   ga('send', 'pageview');
 
 </script>
+
 </body>
 </html>
