@@ -190,6 +190,10 @@ label {
     height: 200px
 }
 
+#lightgallery {
+    overflow: auto;
+}
+
 .portfolio-image {
    max-width: 49%;
    float: left;
