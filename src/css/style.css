@@ -229,7 +229,7 @@ label {
     height: 200px
 }
 
-#lightgallery {
+.lightgallery {
     overflow: auto;
 }
 
